@@ -850,7 +850,7 @@ footer{
 }
 
 
-.Stat3{
+.Stat4{
     background: #1A3928;
     outline: none;
     color: #1A3928;
@@ -863,21 +863,21 @@ footer{
     margin-right: 25px;
 }
 
-.Stat3 h3{
+.Stat4 h3{
     font-weight: 700;
     color: #FFF;
     font-size: 99px;
     padding-bottom: 15px;
 }
 
-.Stat3 p{
+.Stat4 p{
     font-weight: 100;
     font-size: 22px;
     color: #FFF;
 }
 
 
-.Stat4 {
+.Stat3 {
     background: #E3CAFF;
     outline: none;
     color: #1A3928;
@@ -889,7 +889,7 @@ footer{
     padding-top: 30px;
 }
 
-.Stat4 p{
+.Stat3 p{
     font-size: 30px;
 }
 
