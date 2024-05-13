@@ -6,11 +6,32 @@
     <title>Minkey</title>
     <link rel="stylesheet" href="styles\styles.css">
     <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/core.js"></script>
-    <script src="scripts/scripts.js"></script>
     <link rel="icon" href="Images/Disign-Minkey.png">
 </head>
 
 <body>
+    <!-- Loading page-->
+
+    <div id="loader">
+        <img class="loadingMinkey" src="Images/Logo-Minkey-pink-RVB.png" alt="logo">
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        // Afficher la page de chargement
+        document.getElementById("loader").style.display = "flex";
+
+        // Cacher la page de chargement après 3 secondes
+        setTimeout(function() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("main-content").style.display = "block";
+        }, 6000);
+        });
+
+        
+    </script>
+
+
     <!-- Navbar -->
     <nav class = 'Navbar'>
         <ul class="Nav-container">
@@ -110,7 +131,7 @@
     </script>
 
 
-    <!-- Stats -->
+    <!-- Blocs Stats -->
 
     <div class="Stats-Ligne1">
         <div class="Stat1">
@@ -329,7 +350,8 @@
         </div>
     </div>
 
-    
+    <!-- Bandeau Articles -->
+
     
     </container>
 
