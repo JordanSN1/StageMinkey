@@ -1067,7 +1067,6 @@ footer{
     color: #1A3928;
     text-align: center;
     margin-top: 50px;
-    text-transform: uppercase;
 }
 
 .Header-text{
@@ -1212,6 +1211,64 @@ footer{
         display: none;
     }
 }
+
+.cardArticle {
+    height: 450px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin: 10px;
+    border-radius: 35px;
+    background-size: cover;
+}
+
+.CardTitle{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 35px;
+    padding: 0 20px;
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.article-container{
+    display: inline-block;
+    width: 25%;
+    height: 350px; 
+    
+}
+
+.ArticleHeadTitle{
+    color: #1A3928;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    margin: 10px;
+}
+
+.ArticleHeadDate{
+    color: #1A3928;
+    margin: 10px;
+    margin-bottom: 100px;
+
+
+}
+
+
+  
 
 
 
