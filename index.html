@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minkey</title>
+    <link rel="stylesheet" href="styles\styles.css">
+    <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/core.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <link rel="icon" href="Images/Disign-Minkey.png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class = 'Navbar'>
+        <ul class="Nav-container">
+            <li class="list-image"><a href="index.html"><img class="HomeImage" src="Images\Logo-Minkey-Green-RVB.png" alt="HomeImage"></a></li>
+            <li class="Nav-List"><a class="links" href="Solution.html">Solution</a></li>
+            <li class="Nav-List"><a class="links" href="Minkey.html">Minkey</a></li>
+            <li class="Nav-List"><a class="links" href="blog.html">Le blog</a></li>
+            <li class="Nav-List"><a class="links" href="Partenaire.html">Partenaires</a></li>
+        </ul>
+        <a class="buttonProfile" href="https://my.minkey.fr"><img class="profile" src="Images/Profile.png" alt="profile"></a>
+        
+        <a class="ButtonContact" href="contact.html">Contact</a>
+    </nav>
+
+
+    <!-- Accroche page accueil-->
+    <container class="content">
+    <div class="HomeHook">
+        
+        <div class="left-side">
+            <img class="HomeGif" src="Images/singetestgif.gif" alt="HomeImage">
+        </div>
+        <div class="right-side">
+            <p class="exemples1">Des ressources</p>
+            <p class="exemples2">Des Pros</p>
+            <p class="exemples3">Des entrepreneurs</p>
+            <p class="exemples4">Des spécialistes</p>
+            <h1 id="entete" class="Entete"></h1>
+            <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/core.js"></script>
+            <script>
+                const txtAnim = document.querySelector('.Entete');
+                new Typewriter(txtAnim, {
+                    loop: true,
+                    deleteSpeed: 10
+                })
+                .changeDelay(40)
+                .typeString('Minkey t’aide à t’en sortir dans la jungle entrepreneuriale !')
+                .pauseFor(5000)
+                .deleteChars(62) 
+                .pauseFor(500)
+                .typeString('Tu cherches de l\'aide pour entreprendre ? Tu es au bon endroit !')
+                .pauseFor(5000)
+                .start()
+            </script>
+            <p class="who">Solution pour solopreneurs.es, entrepreneurs.es et auto-entrepreneurs.es</p>
+            <a class="Button-Minkey" href="#">Découvrir Minkey</a> 
+            <a class="button-Solution" href="#">La solution</a>
+        </div>
+                
+    </div>
+
+
+    <!-- Bandeau Singe -->
+    <div class="Bandeau-Singe">
+        <div>
+            <img class="Singe1" src="Images/Singebandeau1.png" alt="Bandeau-Singe">  
+            <p class="Text-Singe1">Ne sois plus jamais seul·e dans ton quotidien d’entrepreneur·e.</p>
+        </div>
+        <div>
+            <img class="Singe2" src="Images/Singebandeau2.png" alt="Bandeau-Singe">
+            <p class="Text-Singe2">Fini les pros qui ne comprennent pas tes besoins d’entrepreneur·e.</p>
+        </div>
+        <div>
+            <img class="Singe3" src="Images/Singebandeau3.png" alt="Bandeau-Singe">
+            <p class="Text-Singe3">Ne cherche plus des heures la bonne info, demande à Minkey.</p>
+        </div>
+    </div>
+
+
+    <!-- Stats -->
+
+    <div class="Stats-Ligne1">
+        <div class="Stat1">
+            <h3>43%</h3>
+            <p>Des porteurs de projet abandonnent au stade de <b>l’idée d’entreprendre.</b></p>
+        </div>
+        <div class="Stat2">
+            <p>Plus de <span class="changing-color">8 millions d'entreprises</span> ont vu le jour en France entre 2012 et 2022.</p>
+        </div>
+    </div>
+    <div class="Stats-Ligne2">
+        <div class="Stat4">
+            <p>La <b>solitude</b> de <b>l'entrepreneur</b> est la 2e raison de <b>l'abandon</b> d'un projet après le manque de financement.</p>
+        </div>
+        <div class="Stat3">
+            <h3>1 </h3>
+            <p><b>français sur 4</b> est dans une démarche d’entreprendre.</p>
+        </div>
+        <div class="Stat5">
+            <img class="SingeStats" src="Images/Singe stats.png" alt="Image singe">
+        </div>
+    </div>
+
+    <!-- Bandeau carte offre -->
+    
+
+    <main class="Info">
+    <ul id="cards">
+        <li class="card" id="card_1">
+        <div class="card__content">
+            <div>
+                <h2> C’est parti ! </h2>
+                <p>Echange avec d’autres personnes (Babypreneurs, entrepreneurs, experts) en visio sur la plateforme, rejoins une communauté de plus de 500 entrepreneurs. </p>
+                <p><a href="#top" class="btn btn--accent">Read more</a></p>
+            </div>
+            <figure>
+            <img src="Images/1.png" alt="Image description">
+            </figure>
+        </div>  
+
+        </div>
+        </li>
+        <li class="card" id="card_2">
+        <div class="card__content">
+            <div>
+            <h2>Let’ go ! </h2>
+            <p>Trouve le pro qu’il te faut, établi ton brief pour recevoir ton devis en choisissant parmi une cinquantaine de prestations possibles dédiées à l’entrepreneuriat
+            </p>
+            <p><a href="#top" class="btn btn--accent">Read more</a></p>
+            </div>
+            <figure>
+                <img src="Images/2.png" alt="Image description">
+            </figure>
+        </div>
+        </li>
+        <li class="card" id="card_3">
+        <div class="card__content">
+            <div>
+            <h2>On a de la ressource ! 
+            </h2>
+            <p>Forme-toi en ligne avec nos 8 modules de contenus et exercices, trouve aussi le coworking qu’il te faut et obtiens des tarifs avantageux chez nos partenaires. <p><a href="#top" class="btn btn--accent">Read more</a></p>
+            </div>
+            <figure>
+                <img src="Images/3.png" alt="Image description">
+
+            </figure>
+        </div>
+        </li>
+    </ul>
+    </main>
+
+    <script>
+        // Alternative Versions:
+    // - Vanilla JS Version: https://codyhouse.co/demo-tutorials/stacking-cards/index.html
+    // - CSS @scroll-timeline: https://codepen.io/bramus/pen/PobmGme
+    // - JS ScrollTimeline Polyfill: https://codepen.io/bramus/pen/XWEeGZm
+    // - JS Motion One: https://codepen.io/bramus/pen/rNdzpZK 👈 = The version you are currently looking at
+
+    import { scroll, animate } from "https://cdn.skypack.dev/motion@10.13.1"
+
+    const $cardsWrapper = document.querySelector('#cards');
+    const $cards = document.querySelectorAll('.card');
+
+    const numCards = $cards.length;
+
+    $cards.forEach(($card, index0) => {
+    
+    const index = index0 + 1;
+    const reverseIndex = numCards - index0;
+    const reverseIndex0 = numCards - index;
+
+    // Extra padding per card, so you can see the other stacked cards underneath at the top
+    $card.style.paddingTop = `calc(${index} * var(--card-top-offset))`;
+    
+    // Scroll-Linked Animation
+    scroll(
+        animate($card, {
+        // Earlier cards shrink more than later cards
+        scale: [ 1, 1 - (0.1 * reverseIndex0)],
+        }), {
+        // Each card should only shrink when it’s at the top.
+        // We can’t use exit on the els for this (as they are sticky)
+        // but can track $cardsWrapper instead.
+        target: $cardsWrapper,
+        offset: [`${index0 / numCards * 100}%`, `${index / numCards * 100}%`],
+        }
+    );
+    });
+    </script>
+
+
+    <!-- Bandeau Recherche Pro -->
+    <div class="Bandeau-Pro">
+        <h3 class="CachingPro">Trouve le/la &nbsp </h3>
+        <div class="changing-text"></div>
+        <h3 class="CachingProSubTitle">pour entrepreneurs rapidement et au meilleur prix.</h3>
+        
+
+        <div class="searchBar">
+            <div class="Recherche">
+                <p class="Example">Je veux créer un site web </p>
+            </div>
+            <a class="search-Button" href="https://my.minkey.fr/"><img src="Images/loupe.png" alt="Image loupe bouton recherche"></a>
+        </div>
+    </div>
+    <script>
+        // Function to randomly select a word from the list
+        const getRandomWord = () => {
+        const words = ['Graphiste', 'Avocate','Developpeur·se', 'Commercial·e','Community Manager·se'];
+
+            
+            const currentIndex = parseInt(localStorage.getItem('currentIndex')) || 0;
+            const randomIndex = (currentIndex + 1) % words.length;
+            localStorage.setItem('currentIndex', randomIndex.toString());
+            return words[randomIndex];
+    };
+
+    
+        // Function to change the text content
+        const changeWord = () => {
+            const changingText = document.querySelector('.changing-text');
+            changingText.textContent = getRandomWord();
+    };
+    
+        // Function to apply fade animation
+        const fadeAnimation = () => {
+            const changingText = document.querySelector('.changing-text');
+            changingText.classList.remove('fade');
+            void changingText.offsetWidth;
+            changingText.classList.add('fade');
+        };
+    
+        // Initially set text and start animation
+        changeWord();
+        setInterval(changeWord, 900);
+        setInterval(fadeAnimation, 900);
+    </script>
+
+    <!-- Sliders Partenaires -->
+
+    <h1 class="Header-title">Nos Partenaires</h1>
+    <p class="Header-text">Ils nous font confiance</p>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/1200px-Logo_SINGA.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/4fd86707-393f-44f0-9589-9a11f9fef10e.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/logo-les-tricolores.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/Logo-principal-Bleu-foncé-2-2.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/Logo_onoff_light.svg" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/Look.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/pousses.fr-logo.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/tiime_image_a_la_une_2_Plan_de_travail_11.png" alt="">
+            </div>
+
+            <!-- Sliders Partenaires doublé -->
+
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/1200px-Logo_SINGA.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/4fd86707-393f-44f0-9589-9a11f9fef10e.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/logo-les-tricolores.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/Logo-principal-Bleu-foncé-2-2.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/Logo_onoff_light.svg" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/Look.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/pousses.fr-logo.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="Images/Partenaires/tiime_image_a_la_une_2_Plan_de_travail_11.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    
+    
+    </container>
+
+    <!-- Footer -->
+    <footer>
+        <div class="CatchTextFooter">
+            <h2>Minkey est soutenu par </h2>
+        </div>
+        <div class="logo-incub">
+            <a href="https://diversidays.com/" target="_blank"><img src="Images/Diversidays.png" alt="Images Incubateurs"></a>
+            <a href="https://empow-her.com/" target="_blank"><img src="Images/Empowher.png" alt="Images Incubateurs"></a>
+            <a href="https://stationf.co/" target="_blank"><img src="Images/StationF.png" alt="Images Incubateurs"></a>
+            <a href="https://hellowilla.co/" target="_blank"><img src="Images/willa.png" alt="Images Incubateurs"></a>
+        </div>
+
+        <div class="content-footer">
+            <div class="brand">
+                <a href="index.html"><img class="brand-logo" src="Images\Logo-Minkey-Green-RVB.png" alt="Logo Minkey"></a>
+                <p class="brand-text">Minkey, c’est le petit singe malin qui t’aide à t’en sortir dans la jungle entrepreneuriale.</p>
+    
+            </div>
+            <div class="bloc footer-produits">
+                <h3 class="title">produits</p>
+                <ul class="list-produits">
+                    <li><a href="#">Minkey</a></li>
+                    <li><a href="#">La solution</a></li> 
+                </ul>
+            </div>
+            <div class="bloc footer-aide">
+                <h3 class="title">aide</p>
+                <ul class="list-aide">
+                    <li><a href="#">Qui est minkey ?</a></li>
+                    <li><a href="#">Minkeypédia</a></li>
+                </ul>
+            </div>
+            <div class="bloc footer-minkey">
+                <h3 class="title">Minkey</p>
+                <ul class="list-minkey">
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Protection des données</a></li>
+                    <li><a href="#">CVG & CGU</a></li>
+                    <li><a href="#">Politiques de cookies</a></li>
+                </ul>
+            </div>
+            <div class="bloc footer-reseaux">
+                <h3 class="title">Nos reseaux</p>
+                <ul class="list-reseaux">
+                    <li><a id="InstagramText" class="Instagram" href="https://www.instagram.com/minkey.fr/" target="_blank"><img class="Reseaux" id="InstagramIMG" src="Images\icons\instagram.svg" alt="Icones reseaux sociaux">@minkey</a></li>
+                    <li><a id="LinkedinText"  class="linkedin" href="https://www.linkedin.com/company/minkey-fr/" target="_blank"><img class="Reseaux" id="LinkedinIMG" src="Images\icons\linkedin.svg" alt="Icones reseaux sociaux">Minkey</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <p class="copy">&copy;2024 &#x2022; <a href="#"> &nbsp Minkey &nbsp </a> &#x2022; Tout droits réservés</p>
+    </footer>
+</body>
+</html>
