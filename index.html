@@ -213,12 +213,42 @@
 
         <div class="searchBar">
             <div class="Recherche">
-                <p class="Example">Je veux créer un site web </p>
+                <p class="Example">SearchBar</p>
             </div>
             <a class="search-Button" href="https://my.minkey.fr/"><img src="Images/loupe.png" alt="Image loupe bouton recherche"></a>
         </div>
     </div>
-    <script>
+    <script>    
+        // Typewriter script for search pro section
+        const SearchAnim = document.querySelector('.Example');
+                new Typewriter(SearchAnim, {
+                    loop: true,
+                    deleteSpeed: 10
+                })
+        .changeDelay(40)
+        .typeString('Construit ton Prévisionnel Financier')
+        .pauseFor(5000)
+        .deleteChars(62) 
+        .pauseFor(500)
+        .typeString('Fais développer ton application')
+        .pauseFor(5000)
+        .deleteChars(62) 
+        .pauseFor(500)
+        .typeString('Créer les statuts de ton entreprise')
+        .pauseFor(5000)
+        .deleteChars(62) 
+        .pauseFor(500)
+        .typeString('Sois tranquille sur ta comptabilité')
+        .pauseFor(5000)
+        .start()
+
+
+
+
+
+
+
+
         // Function to randomly select a word from the list
         const getRandomWord = () => {
         const words = ['Graphiste', 'Avocate','Developpeur·se', 'Commercial·e','Community Manager·se'];
@@ -312,6 +342,9 @@
     </div>
 
     <!-- Bandeau Articles -->
+    <div class="BandeauArticle">
+        <span class="minkey">Minkey</span><span class="blog">Blog</span>
+    </div></div>
 
     <div id="articleContainer" class="container">
     </div>
@@ -343,11 +376,10 @@
                     CardDescription.classList.add('CardDescription');
                     cardArticle.classList.add('cardArticle');
                     cardArticle.style.backgroundImage = `url("${backgroundImage}")`;
-                    cardArticle.innerHTML = `<h2 class="CardTitle">${title}</h2>`;
+                    cardArticle.innerHTML = `<a href="Articles/${articleFile}" class="article-link"><h2 class="CardTitle">${title}</h2></a>`;
                     CardDescription.innerHTML = `<h3 class="ArticleHeadTitle">${headTitle}</h2><p class="ArticleHeadDate">${headDate}</p>`;
                     container.appendChild(cardArticle);
                     container.appendChild(CardDescription);
-
                     articleContainer.appendChild(container);
                 })
                 .catch(error => console.error('Erreur de chargement de l\'article:', error));

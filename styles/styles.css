@@ -1224,24 +1224,52 @@ footer{
 .CardTitle{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
-    font-size: 35px;
-    padding: 0 20px;
+    font-size: 32px;
+    padding: 0 25px;
     color: #FFF;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    max-width: fit-content;
+    
+}
+
+.BandeauArticle {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 40px;
+    background-color: #1A3928;
+    border-radius: 15px;
+    color: #FFF;
+    text-align: center;
+    margin:  0px auto; 
+    display: block; 
+    padding: 10px;
+    width: fit-content; 
+    margin-bottom: -50px;
+}
+
+
+.blog{
+    color: #E3CAFF;
 }
 
 .article-container{
     display: inline-block;
-    width: 25%;
-    height: 350px; 
+    width: 20%;
+    height: 700px; 
+    padding-top: 50px;
+    margin-bottom: 50px;
+    vertical-align: top;
     
 }
 
@@ -1253,22 +1281,30 @@ footer{
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
-    font-size: 20px;
+    font-size: 22px;
     display: flex;
     justify-content: left;
     margin: 10px;
+    padding-bottom: 15px;
+    width: fit-content;
+    margin-left: 20px;
 }
 
 .ArticleHeadDate{
     color: #1A3928;
     margin: 10px;
     margin-bottom: 100px;
-
+    margin-left: 20px;
 
 }
 
-
-  
-
-
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
 
