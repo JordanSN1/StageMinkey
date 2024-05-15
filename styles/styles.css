@@ -1022,9 +1022,10 @@ footer{
     object-fit: cover;
   }
 
-  .card__content h2{
-    font-size: 32px;
-    color: #E3CAFF;
+  .card__content .TitleCard{
+    font-weight: 700;
+    font-size: 48px;
+    color: #E3CAFF;;
 
   }
 
@@ -1364,6 +1365,181 @@ h3{
     .Button-Minkey, .button-Solution {
         padding: 6px 12px;
         font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    * {
+        overflow-x: hidden;
+    }
+    .CatchTextFooter {
+        font-size: 14px;
+        padding: 10px 10px;
+        padding-top: 25px;
+    }
+    .CatchTextFooter h2 {
+        font-size: 28px;
+    }
+
+    .logo-incub {
+        width: 380px;
+        padding: 10px 0;
+        
+    }
+
+    .logo-incub img {
+        width: 80px;
+        padding: 5px 0;
+    }
+
+    .bloc {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-produits h3,
+    .footer-aide h3,
+    .footer-minkey h3,
+    .footer-reseaux h3 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    .list-produits,
+    .list-aide,
+    .list-minkey,
+    .list-reseaux {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    .content-footer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 10px;
+    }
+
+    .copy {
+        font-size: 14px;
+        padding: 10px 0px;
+        padding-bottom: 15px;
+    }
+
+    .brand-logo {
+        width: 80px;
+        padding: 10px 0;
+    }
+
+    .brand-text {
+        font-size: 14px;
+        padding: 10px 10px;
+        padding-bottom: 35px;
+    }
+
+    .brand {
+        font-size: 14px;
+        padding-right: 10px;
+    }
+    .list-reseaux {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .list-reseaux img {
+        width: 20px;
+        margin: 5px;
+        transition: transform 0.15s ease-in-out;
+    }
+
+    .list-reseaux a {
+        color: #1A3928;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding-right: 5px;
+        transition: color 0.15s ease-in-out;
+    }
+
+    .linkedin {
+        font-size: 16px;
+        transition: color 0.15s ease-in-out;
+    }
+
+    #LinkedinIMG {
+        width: 25px;
+        height: auto;
+        margin-right: 25px;
+        padding-top: 0px;
+    }
+
+    #LinkedinText {
+        padding-top: -15px;;
+        }
+
+    #InstagramIMG {
+        width: 30px;
+        height: auto;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    #InstagramText {
+        margin-top: -5px;
+        margin-bottom: -4px;
+    }
+    .cardArticle {
+        height: 250px;
+        margin: 10px;
+        border-radius: 20px;
+        background-size: cover;
+    }
+
+    .CardTitle {
+        font-size: 20px;
+        padding: 0 15px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .BandeauArticle {
+        font-size: 24px;
+        border-radius: 10px;
+        padding: 5px;
+        width: auto;
+        margin-bottom: -25px;
+    }
+
+    .article-container {
+        width: 90%;
+        height: auto;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .ArticleHeadTitle {
+        font-size: 18px;
+        margin: 10px 0;
+        padding-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .ArticleHeadDate {
+        margin: 10px 0;
+        margin-left: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
