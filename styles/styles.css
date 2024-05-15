@@ -727,7 +727,7 @@ footer{
 .search-Button{
     background-color: #E3CAFF;
     border-radius: 10px;
-    padding: 10.5px;
+    padding: 11.7px;
     position: absolute;
     right: 0;
     top: 0;
@@ -991,12 +991,10 @@ footer{
     font-variation-settings:
       "slnt" 0;
     font-size: 18px;
-  
     display: grid;
     grid-template-areas: "text img";
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: auto;
-  
     align-items: stretch;
     outline: var(--outline-width) solid lime;
   }
@@ -1026,7 +1024,6 @@ footer{
     font-weight: 700;
     font-size: 48px;
     color: #E3CAFF;;
-
   }
 
   
@@ -1217,6 +1214,11 @@ footer{
     margin: 10px;
     border-radius: 35px;
     background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cardArticle:hover{
+    transform: scale(1.02);
 }
 
 .CardTitle{
@@ -1262,10 +1264,10 @@ footer{
     width: 20%;
     height: 700px; 
     padding-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     vertical-align: top;
-    
 }
+
 
 .ArticleHeadTitle{
     color: #1A3928;
@@ -1301,6 +1303,33 @@ footer{
     margin-left: 25px;
     margin-right: 25px;
 }
+.ButtonMore{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #1A3928;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+
+.ButtonMore a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+.ButtonMore a:hover{
+    color: #E3CAFF;
+}
+
 
 
 h1{
@@ -1540,69 +1569,161 @@ h3{
         margin-left: 10px;
         margin-right: 10px;
     }
-    header,
-    .Info {
-      width: 95vw;
-      margin: 0 auto;
-    }
-  
-    header {
-      height: 60vh;
-    }
-  
-    #cards {
-      outline: calc(var(--outline-width) * 5) solid blue;
-      grid-template-columns: 1fr;
-      gap: calc(var(--card-margin) / 2);
-    }
-  
-    .card {
-      outline: calc(var(--outline-width) / 2) solid hotpink;
-    }
-  
-    .card__content {
-      font-size: 14px;
-      grid-template-areas: 
-        "img"
-        "text";
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto;
-      outline: calc(var(--outline-width) / 2) solid lime;
-    }
-  
-    .card__content > div {
-      width: 90%;
-      gap: 1em;
-      text-align: center;
-    }
-  
-    .card__content > figure {
-      width: 100%;
-      height: auto;
-    }
-  
-    .card__content > figure > img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .card__content .TitleCard {
-      font-size: 24px;
-    }
-  
-    .btn {
-      padding: 0.5em 1em;
-      font-size: 14px;
-    }
-  
-    aside {
-      width: 90vw;
-      text-align: center;
-    }
-  
-    aside p {
-      margin-bottom: 0.5em;
+
+    
+        
+    .Bandeau-Pro{
+        background-color: #1A3928;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-variation-settings:
+        "slnt" 0;
+        font-size: 18px;
+        color: #FFF;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 100%;
+        height: 220px;
     }
 
+    .CachingPro{
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        text-align: center;
+        font-style: normal;
+        font-variation-settings:
+        "slnt" 0;
+        color: #FFF;
+        margin: 0 auto;
+        font-size: 32px;
+    }
+
+    .CachingProSubTitle{
+        display: flex;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        text-align: center;
+        font-style: normal;
+        font-variation-settings:
+        "slnt" 0;
+        color: #FFF;
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border: 1px solid #E3CAFF;
+        width: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 12px;
+        border-radius: 30px;
+    }
+    .searchBar {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFF;
+        color: #FFF;
+        border-radius: 10px;
+        border: none;
+        outline: none; 
+        font-weight: 600;
+        font-size: 18px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+        margin-top: 25px;
+        transition: background-color 0.3s ease-in-out;
+        transform: scale(1);
+        width: 100%;
+        padding: 16px 0px;
+    }
+    
+    .searchBar .Example {
+        position: absolute;
+        font-size:12px ;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; 
+        text-align: left;
+    }
+    
+
+    .search-Button {
+        background-color: #E3CAFF;
+        border-radius: 10px;
+        padding: 11.7px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .search-Button{
+        background-color: #E3CAFF;
+        border-radius: 10px;
+        padding: 5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .search-Button img{
+        width: 18px;
+        height: auto;
+        position: relative;
+        padding-top: 2px;
+        top: 1px;
+        left: 1px;
+        margin-right: 2px;
+
+    }
+
+    .search-Button:hover {
+        background-color: #E3CAFF;
+    }
+
+    .changing-text{
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-variation-settings:
+        "slnt" 0;
+        color: #1A3928;
+        width: fit-content;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFF;
+        border-radius: 15px;
+        padding:5px;
+        margin: 0 auto;
+        
+    }
+    .fade {
+        animation: myanimation 1.5s;
+    }
+    @keyframes myanimation {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+
+
 }
+
+
 
