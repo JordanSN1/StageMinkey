@@ -1031,8 +1031,6 @@ footer{
 
   
   
-
-  
   .btn {
     background: #E3CAFF;
     color: #1A3928;
@@ -1492,9 +1490,8 @@ h3{
         margin-top: -5px;
         margin-bottom: -4px;
     }
-    .cardArticle {
-        height: 250px;
-        margin: 10px;
+    .cardArticle {        
+        margin: 20px;
         border-radius: 20px;
         background-size: cover;
     }
@@ -1526,11 +1523,13 @@ h3{
         margin: 10px 0;
         padding-bottom: 10px;
         margin-left: 10px;
+        text-align: center;
     }
 
     .ArticleHeadDate {
         margin: 10px 0;
         margin-left: 10px;
+        text-align: center;
     }
 
     .container {
@@ -1541,5 +1540,69 @@ h3{
         margin-left: 10px;
         margin-right: 10px;
     }
+    header,
+    .Info {
+      width: 95vw;
+      margin: 0 auto;
+    }
+  
+    header {
+      height: 60vh;
+    }
+  
+    #cards {
+      outline: calc(var(--outline-width) * 5) solid blue;
+      grid-template-columns: 1fr;
+      gap: calc(var(--card-margin) / 2);
+    }
+  
+    .card {
+      outline: calc(var(--outline-width) / 2) solid hotpink;
+    }
+  
+    .card__content {
+      font-size: 14px;
+      grid-template-areas: 
+        "img"
+        "text";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      outline: calc(var(--outline-width) / 2) solid lime;
+    }
+  
+    .card__content > div {
+      width: 90%;
+      gap: 1em;
+      text-align: center;
+    }
+  
+    .card__content > figure {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card__content > figure > img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card__content .TitleCard {
+      font-size: 24px;
+    }
+  
+    .btn {
+      padding: 0.5em 1em;
+      font-size: 14px;
+    }
+  
+    aside {
+      width: 90vw;
+      text-align: center;
+    }
+  
+    aside p {
+      margin-bottom: 0.5em;
+    }
+
 }
 
