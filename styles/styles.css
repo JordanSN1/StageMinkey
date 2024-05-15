@@ -38,7 +38,7 @@ body{
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
-    font-size: 20px;
+    font-size: 18px;
     color: #1A3928;
     padding-right: 100px;
     padding-left: 100px;
@@ -83,7 +83,7 @@ body{
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     margin: 0 80px; 
     margin-bottom: 20px;
@@ -121,7 +121,7 @@ body{
     border: none;
     outline: none; 
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     position: absolute;
     top: 18px;
     right: 100px;
@@ -203,7 +203,7 @@ body{
     border: none;
     outline: none; 
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     position: absolute;
     top: 16px;
     right: 220px;
@@ -231,7 +231,7 @@ footer{
 }
 
 .CatchTextFooter{
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
@@ -281,7 +281,7 @@ footer{
 .footer-aide h3,
 .footer-minkey h3,
 .footer-reseaux h3 {
-    font-size: 20px;
+    font-size: 22px;
     padding-bottom:20px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -298,7 +298,7 @@ footer{
 .list-minkey,
 .list-reseaux{
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: none;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -355,7 +355,7 @@ footer{
 
 .linkedin{
     text-transform: none;
-    font-size: 16px;
+    font-size: 18px;
     transition: color 0.15s ease-in-out;
 }
 #LinkedinIMG{
@@ -382,7 +382,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    font-size: 20px;
+    font-size: 18px;
     padding: 50px 0 10px;
     transition: transform 0.15s ease-in-out;
 }
@@ -391,7 +391,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 18px;
     padding-top: 0px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -430,14 +430,14 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0 auto;
     padding: 20px 0;
     transition: color 0.15s ease-in-out;
 }
 
 .brand{
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
@@ -541,7 +541,7 @@ footer{
 .exemples4 {
     font-family: "Inter", sans-serif;
     color: black;
-    font-size: 11px;
+    font-size: 18px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -566,7 +566,7 @@ footer{
     border: none;
     outline: none; 
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -593,7 +593,7 @@ footer{
     border: none;
     outline: none; 
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -602,7 +602,7 @@ footer{
       "slnt" 0;
     margin-top: 20px;
     position: absolute;
-    right: 600px;
+    right: 580px;
     transition: background-color 0.3s ease-in-out;
     transform: scale(1);
 }
@@ -624,7 +624,7 @@ footer{
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFF;
     padding-right: 100px;
     padding-left: 100px;
@@ -633,7 +633,7 @@ footer{
 }
 
 .CachingPro{
-    margin-top: 20px;
+    margin-top: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -680,7 +680,7 @@ footer{
     border: none;
     outline: none; 
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -707,7 +707,7 @@ footer{
     font-variation-settings:
       "slnt" 0;
     color: #FFF;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .Example{
@@ -716,7 +716,7 @@ footer{
     font-weight: 100    ;
     font-variation-settings:
       "slnt" 0;
-    font-size: 16px;
+    font-size: 18px;
     opacity: 80%;
     color: #1A3928;
     margin-left: 10px;
@@ -755,7 +755,7 @@ footer{
       "slnt" 0;
     color: #1A3928;
     width: fit-content;
-    font-size: 60px;
+    font-size: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -808,25 +808,24 @@ footer{
     border-radius: 34px;
     width: 60%;
     height: 250px;
+    padding-top: 25px;
     margin-right: 20px;
 }
 
-.Stat1 h3{
+.Stat1 span{
     margin-left: 20px;
-    margin-top: 20px;
+    padding-bottom: -50px;
     font-weight: 700;
     font-size: 99px;    
-    color: #FFF;
-    
+    color: #fff;
 }
 
 .Stat1 p{
     font-weight: 100;
     font-size: 22px;
     padding-right: 20px;
-    margin-top: 5px;
     padding-left: 20px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     color: #FFF;
 }
 
@@ -875,7 +874,7 @@ footer{
     margin-right: 25px;
 }
 
-.Stat4 h3{
+.Stat4 span{
     font-weight: 700;
     color: #FFF;
     font-size: 99px;
@@ -991,7 +990,7 @@ footer{
     font-weight: 100    ;
     font-variation-settings:
       "slnt" 0;
-    font-size: 24px;
+    font-size: 18px;
   
     display: grid;
     grid-template-areas: "text img";
@@ -1024,7 +1023,7 @@ footer{
   }
 
   .card__content h2{
-    font-size: 40px;
+    font-size: 32px;
     color: #E3CAFF;
 
   }
@@ -1213,7 +1212,7 @@ footer{
 }
 
 .cardArticle {
-    height: 450px;
+    height: 400px;
     margin-right: 200px;
     margin-left: 200px;
     margin: 10px;
@@ -1247,9 +1246,8 @@ footer{
     font-style: normal;
     font-variation-settings: "slnt" 0;
     font-size: 40px;
-    background-color: #1A3928;
     border-radius: 15px;
-    color: #FFF;
+    color: #1A3928;
     text-align: center;
     margin:  0px auto; 
     display: block; 
@@ -1259,9 +1257,6 @@ footer{
 }
 
 
-.blog{
-    color: #E3CAFF;
-}
 
 .article-container{
     display: inline-block;
@@ -1306,5 +1301,69 @@ footer{
     margin-top: 50px;
     margin-left: 25px;
     margin-right: 25px;
+}
+
+
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 22px;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .HomeHook {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+    
+    .right-side, .left-side {
+        width: 100%;
+        padding: 5%;
+    }
+    
+    .HomeGif {
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    
+    .Button-Minkey, .button-Solution {
+        margin: 10px 0;
+    }
+    
+    .button-Solution {
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .Entete {
+        font-size: 36px;
+    }
+    
+    .who {
+        font-size: 18px;
+    }
+    
+    .exemples1, .exemples2, .exemples3, .exemples4 {
+        font-size: 10px;
+    }
+
+    .Button-Minkey, .button-Solution {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
 }
 
