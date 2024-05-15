@@ -89,6 +89,27 @@ body{
     margin-bottom: 20px;
 }
 
+@media (max-width: 400px){
+    .Bandeau-Singe img{
+        width: 57px;
+        height: auto;
+        margin: 25px 40px; 
+        margin-bottom: 1vh;
+    }
+    
+    .Bandeau-Singe p{
+        font-size: 13px;
+        margin: 0 10px; 
+        margin-bottom: 10px;
+        padding: 0 30px 0 30px;
+    }
+    
+    .Bandeau-Singe{
+        flex-direction: column;
+        padding: 2px 0 32px 0;
+    } 
+}
+
 /* NavBar */
 .Navbar{
     
@@ -103,7 +124,6 @@ body{
     padding-left: 50px;
     display: flex;
     justify-content: center;
-
 }
 
 .Nav-List{
@@ -131,7 +151,6 @@ body{
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
-    
 }
 
 .ButtonContact:hover{
@@ -219,6 +238,47 @@ body{
 .buttonProfile:hover{
     text-decoration: none;
     transform: scale(1.1);
+}
+
+@media (max-width: 400px){
+    .Nav-List{
+        display: none;
+    }
+    
+    .ButtonContact{
+        display: none;
+    }
+    
+    .buttonProfile{
+        display: none;
+    }
+    
+    .Sidebar{
+        margin-right: auto;
+    }
+    
+    .Nav-container{
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 16px;
+        padding-left: 50px;
+    }
+    
+    .list-image .HomeImage{
+        margin-left: -25px;
+        padding-top: 9px;
+
+    }
+    
+    .icon{
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: 25px;
+        top: -8px;
+    }
 }
 
 /* Footer */
