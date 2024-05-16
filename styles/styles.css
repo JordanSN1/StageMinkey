@@ -380,6 +380,7 @@ footer{
     font-variation-settings:
       "slnt" 0;
     text-align: center;
+    color: #1A3928;
     padding: 20px 0;
     transition: color 0.15s ease-in-out;
 }
@@ -1531,7 +1532,7 @@ h3{
     }
     
     .exemples1, .exemples2, .exemples3, .exemples4 {
-        font-size: 10px;
+        font-size: 18px;
     }
 
 }
@@ -1550,6 +1551,7 @@ h3{
         font-size: 14px;
         padding: 10px 10px;
         padding-top: 25px;
+        text-decoration: none;
     }
     .CatchTextFooter h2 {
         font-size: 28px;
@@ -2143,7 +2145,7 @@ h3{
     }
 
     .Entete {
-        font-size: 30px;
+        font-size: 42px;
     }
 
     .who {
@@ -2151,7 +2153,7 @@ h3{
     }
 
     .exemples1, .exemples2, .exemples3, .exemples4 {
-        font-size: 10px;
+        font-size: 18px;
     }
 
 
