@@ -33,17 +33,36 @@
 
     <!-- Navbar -->
     <nav class = 'Navbar'>
+        <ul class="Sidebar">
+            <li class="HideSidebar" onclick="HideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> <br> <br>
+            <li class="Nav-List1"><a class="links" href="Solution.html">Solution</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="Minkey.html">Minkey</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="blog.html">Le blog</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="Partenaire.html">Partenaires</a></li> <br>
+        </ul>
         <ul class="Nav-container">
             <li class="list-image"><a href="index.html"><img class="HomeImage" src="Images\Logo-Minkey-Green-RVB.png" alt="HomeImage"></a></li>
             <li class="Nav-List"><a class="links" href="Solution.html">Solution</a></li>
             <li class="Nav-List"><a class="links" href="Minkey.html">Minkey</a></li>
             <li class="Nav-List"><a class="links" href="blog.html">Le blog</a></li>
             <li class="Nav-List"><a class="links" href="Partenaire.html">Partenaires</a></li>
+            <li class="icon" onclick="ShowSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
         <a class="buttonProfile" href="https://my.minkey.fr"><img class="profile" src="Images/Profile.png" alt="profile"></a>
         
         <a class="ButtonContact" href="contact.html">Contact</a>
     </nav>
+
+    <script>
+        function ShowSidebar() {
+            const Sidebar = document.querySelector('.Sidebar')
+            Sidebar.style.display = 'flex'
+        }
+        function HideSidebar() {
+            const Sidebar = document.querySelector('.Sidebar')
+            Sidebar.style.display = 'none'
+        }
+    </script>
 
 
     <!-- Accroche page accueil-->
@@ -143,7 +162,7 @@
     </div>
     <div class="Stats-Ligne2">
         <div class="Stat3">
-            <p>La <b>solitude</b> de <b>l'entrepreneur</b> est la 2e raison de <b>l'abandon</b> d'un projet après le manque de financement.</p>
+            <p>La <b>solitude</b> de <b>    l'entrepreneur</b> est la 2e raison de <b>l'abandon</b> d'un projet après le manque de financement.</p>
         </div>
         <div class="Stat4">
             <span>1</span>
@@ -151,6 +170,36 @@
         </div>
         <div class="Stat5">
             <img class="SingeStats" src="Images/Singe stats.png" alt="Image singe">
+        </div>
+    </div>
+
+
+    <!--Partie mobile-->
+    <div class="mobile">
+        <div class="Stats-Ligne1-mobile">
+            <div class="Stat1-mobile">
+                <span>43%</span>
+                <p class="text-mobile">Des porteurs de projet abandonnent au stade de <b>l’idée d’entreprendre.</b></p>
+            </div>
+        </div>
+        <div class="Stats-Ligne2-mobile">
+            <div class="Stat2-mobile">
+                <p class="text-mobile">Plus de <span class="changing-color-mobile">8 millions d'entreprises</span> ont vu le jour en France entre 2012 et 2022.</p>
+            </div>
+            <div class="Stat3-mobile">
+                <span>1</span>
+                <p class="text-mobile"><b>français sur 4</b> est dans une démarche d’entreprendre.</p>
+            </div>
+        </div>
+        <div class="Stats-Ligne3-mobile">
+            <div class="Stat4-mobile">
+                <p class="text-mobile">La <b>solitude</b> de <b>l'entrepreneur</b> est la 2e raison de <b>l'abandon</b> d'un projet après le manque de financement.</p>
+            </div>
+        </div>
+        <div class="Stats-Ligne4-mobile">
+            <div class="Stat5-mobile">
+                <img class="SingeStats-mobile" src="Images/Singe stats.png" alt="Image singe">
+            </div>
         </div>
     </div>
 
