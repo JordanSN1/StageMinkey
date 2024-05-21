@@ -1,7 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+/* Home Page */
+
+
 /* Main content and css */
+:root {
+    --h1-size: 48px;
+    --h2-size: 32px;
+    --h3-size: 22px;
+    --body-size: 18px;
+}
+
+h1 {
+    font-size: var(--h1-size);
+}
+
+h2 {
+    font-size: var(--h2-size);
+}
+
+h3 {
+    font-size: var(--h3-size);
+}
+
+
+
 *{
     margin: 0;
     padding: 0; 
@@ -2145,7 +2169,7 @@ h3{
     }
 
     .Entete {
-        font-size: 42px;
+        font-size: 30px;
     }
 
     .who {
@@ -2184,3 +2208,428 @@ h3{
 
 
 
+
+
+
+
+
+
+/* Page Solution */
+
+
+/* Bloc solution */
+.Titre-Solution{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 40px;
+    color: #1A3928;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.Solution{
+    display: flex;
+    flex-direction: column; 
+    margin: 15px;
+}
+
+
+
+.Titre-fontBulle{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    color: #FFF;
+    font-size: var(--body-size);
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: #1A3928;
+    border-radius: 34px;
+    padding: 8px;
+    width: fit-content;
+}
+
+.TitreBloc{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    color: #1A3928;
+    margin-bottom: 40px;
+}
+
+.TexteBloc{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    color: #1A3928;
+    word-wrap: break-word;
+    padding-left: 5px;
+    
+}
+
+.ligne1-Solution,.ligne2-Solution,.ligne3-Solution{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 350px;
+}
+
+
+
+.ligne1-Solution .colonne1{
+    width: 50%;
+
+}
+.ligne1-Solution .colonne2{
+    width: 40%;
+
+}
+
+.ligne2-Solution .colonne1{
+    width: 40%;
+    margin-left: 20px;
+}
+.ligne2-Solution .colonne2{
+    width: 50%;
+    padding-left: 18vh;
+    
+}
+
+.ligne2-Solution .Titre-fontBulle{
+    margin-bottom: 10px;
+}
+
+.ligne2-Solution .TitreBloc{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.ligne3-Solution .colonne1{
+    width: 50%;
+
+}
+.ligne3-Solution .colonne2{
+    width: 40%;
+
+}
+
+
+.testtaille{
+    width: 650px;
+    height: 300px;
+    background-color: #E3CAFF;
+    border-radius: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Slider solution */
+
+
+
+.solution{
+    background-color:#E3CAFF ;
+    padding-top: 10px;
+    height: 750px;
+    margin-bottom: 50px;
+}
+
+.solution .jungle{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 40px;
+    color: #1A3928;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.solution .jungle-text{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 18px;
+    color: #1A3928;
+    text-align: center;
+    margin-top: 10px;
+
+
+}
+
+#slide1, #slide3, #slide5{
+    background-color: #1A3928;
+    border-radius: 12px;
+}
+#slide1 p, #slide3 p , #slide5 p{
+    color: #FFF;
+}
+
+
+#slide2, #slide4{
+    background-color: #FFF;
+    border-radius: 12px;
+}
+
+
+.slider-solution{
+    height: 500px;
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    
+}
+
+.slide-track-solution{
+    display: flex;
+    width: calc(1000px * 4); 
+    animation: slide 20s linear infinite;
+}
+
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 8));
+    }
+}
+
+
+.slide-solution{
+    width: 450px;
+    height: 500px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.text-slider-solution{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 16px;
+    color: #1A3928;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.img-slider-solution{
+    width: 185px;
+    height: 300px;
+    padding: 5px;
+
+}
+
+
+
+
+.slider-solution::before, .slider-solution::after{
+    background-color: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider-solution::before{
+    left: 0;
+    top: 0;
+}
+.slider-solution::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(100deg);
+}
+
+
+/* Bloc CTA */
+
+.CTA{
+    background-color: #E3CAFF;
+    padding: 50px;
+    height: 44vh;
+    margin-top: 50px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 150px 80px;
+}
+
+.CTA img{
+    width: 280px;
+    height: auto;
+    margin-right: 8vh;
+    margin-left: 5vh;
+    margin-top: 1vh;
+}
+
+.container-CTA{
+    padding-left: 6vh;
+}
+.CTA h2{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 48px;
+    color: #1A3928;
+    margin-top: -vh;  
+    margin-bottom: 5vh;
+
+}
+/* Variables */
+:root {
+    --primary-color: #E3CAFF;
+    --primary-color-darken: #1A3928;
+    --Article-Background-Color:#F8F2FF;
+  }
+  
+  /* Button Styles */
+  .CTA .buttonCTA {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 2vh;
+    border-radius: 15px;
+    color: #1A3928;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    border: #1A3928 2px solid;
+    background-color: #E3CAFF;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .CTA .buttonCTA:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    z-index: -2;
+  }
+  
+  .CTA .buttonCTA:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--primary-color-darken);
+    transition: all 0.4s;
+    border-radius: 15px;
+    z-index: -1;
+  }
+  
+  .CTA .buttonCTA:hover {
+    color: #E3CAFF;
+    background-color: #1A3928;
+  }
+  
+  .CTA .buttonCTA:hover:before {
+    width: 100%;
+  }
+  
+
+
+  
+/* Article */
+.FirstVisual {
+    position: relative;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.Visuel-Article {
+    display: block;
+    width: 45vw;
+    height: auto;
+    border-radius: 14px;
+
+}
+
+.Visual-title {
+    position: absolute;
+    font-weight: 500;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+}
+  
+.all-content {
+    background-color: var(--Article-Background-Color);
+    width: 100%;
+    padding: 5vh 4vw;
+}
+
+.Main-content{
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 20px 10vw;
+
+}
+
+.details{}

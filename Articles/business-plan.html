@@ -3,11 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/Disign-Minkey.png">
+    <link rel="stylesheet" href="..\styles\styles.css">
     <title>Business plan</title>
 </head>
 <body>
-    <h1>Business plan : que doit-il impérativement contenir et comment le réussir ?</h1>
-    <div class="Creation"> Minkey 2024-05-13</div>
-    <img src="Images\Fond-jungle.png" alt="dfkgjdfg">
+    <!-- Loading page-->
+
+    <div id="loader">
+        <img class="loadingMinkey" src="..\Images/Logo-Minkey-pink-RVB.png" alt="logo">
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        // Afficher la page de chargement
+        document.getElementById("loader").style.display = "flex";
+    
+        // Cacher la page de chargement après 3 secondes
+        setTimeout(function() {
+            document.getElementById("loader").style.display = "none";
+        }, 6000);
+        });
+    
+            
+    </script>
+    
+    
+    <!-- Navbar -->
+    <nav class = 'Navbar'>
+        <ul class="Sidebar">
+            <li class="HideSidebar" onclick="HideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> <br> <br>
+            <li class="Nav-List1"><a class="links" href="solution.html">Solution</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="Minkey.html">Minkey</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="blog.html">Le blog</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="Partenaire.html">Partenaires</a></li> <br>
+        </ul>
+        <ul class="Nav-container">
+            <li class="list-image"><a href="index.html"><img class="HomeImage" src="..\Images\Logo-Minkey-Green-RVB.png" alt="HomeImage"></a></li>
+            <li class="Nav-List"><a class="links" href="..\solution.html">Solution</a></li>
+            <li class="Nav-List"><a class="links" href="..\Minkey.html">Minkey</a></li>
+            <li class="Nav-List"><a class="links" href="..\blog.html">Le blog</a></li>
+            <li class="Nav-List"><a class="links" href="..\Partenaire.html">Partenaires</a></li>
+            <li class="icon" onclick="ShowSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <a class="buttonProfile" href="https://my.minkey.fr"><img class="profile" src="..\Images\Profile.png" alt="profile"></a>
+            
+        <a class="ButtonContact" href="contact.html">Contact</a>
+    </nav>
+    
+    <script>
+        function ShowSidebar() {
+            const Sidebar = document.querySelector('.Sidebar')
+            Sidebar.style.display = 'flex'
+        }
+        function HideSidebar() {
+            const Sidebar = document.querySelector('.Sidebar')
+            Sidebar.style.display = 'none'
+        }
+    </script>
+
+    <div class="FirstVisual">
+        <img class="Visuel-Article" src="..\Images\Fond-jungle.png" alt="Visuel-Article">
+        <div class="Visual-title">Business Plan toute les infos clés</div>
+    </div>
+    <div class="all-content">
+        <div class="Main-content">
+            <h1 class="Article-title">Business plan : que doit-il impérativement contenir et comment le réussir ?</h1>
+            <div class="details"></div>
+                <div class="Etiquette">Création d'entreprise</div>
+                <div class="Creation"> Minkey 2024-05-13</div>
+            </div>
+        </div>
+    
+    </div>
+    
+
 </body>
+
 </html>

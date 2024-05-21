@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minkey</title>
+    <title>La solution</title>
     <link rel="stylesheet" href="styles\styles.css">
-    <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/core.js"></script>
     <link rel="icon" href="Images/Disign-Minkey.png">
+
+
 </head>
-
 <body>
-    <!-- Loading page-->
+     <!-- Loading page-->
 
-    <div id="loader">
+     <div id="loader">
         <img class="loadingMinkey" src="Images/Logo-Minkey-pink-RVB.png" alt="logo">
     </div>
 
@@ -65,307 +65,136 @@
     </script>
 
 
-    <!-- Accroche page accueil-->
-    <container class="content">
-    <div class="HomeHook">
-        
-        <div class="left-side">
-            <img class="HomeGif" src="Images/singetestgif.gif" alt="HomeImage">
-        </div>
-        <div class="right-side">
-            <p class="exemples1">Des ressources</p>
-            <p class="exemples2">Des Pros</p>
-            <p class="exemples3">Des entrepreneurs</p>
-            <p class="exemples4">Des spécialistes</p>
-            <h1 id="entete" class="Entete"></h1>
-            <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/core.js"></script>
-            <script>
-                const txtAnim = document.querySelector('.Entete');
-                new Typewriter(txtAnim, {
-                    loop: true,
-                    deleteSpeed: 10
-                })
-                .changeDelay(40)
-                .typeString('Minkey t’aide à t’en sortir dans la jungle entrepreneuriale !')
-                .pauseFor(5000)
-                .deleteChars(62) 
-                .pauseFor(500)
-                .typeString('Tu cherches de l\'aide pour entreprendre ? Tu es au bon endroit !')
-                .pauseFor(5000)
-                .start()
-            </script>
-            <p class="who">Solution pour solopreneurs.es, entrepreneurs.es et auto-entrepreneurs.es</p>
-            <a class="Button-Minkey" href="#">Découvrir Minkey</a> 
-            <a class="button-Solution" href="#">La solution</a>
-        </div>
-                
-    </div>
-
-
-    <!-- Bandeau Singe -->
-    <div class="Bandeau-Singe">
-        <div>
-            <img class="Singe1" src="Images/Singebandeau1.png" alt="Bandeau-Singe">  
-            <p class="Text-Singe1">Ne sois plus jamais seul·e dans ton quotidien d’entrepreneur·e.</p>
-        </div>
-        <div>
-            <img class="Singe2" src="Images/Singebandeau2.png" alt="Bandeau-Singe">
-            <p class="Text-Singe2">Fini les pros qui ne comprennent pas tes besoins d’entrepreneur·e.</p>
-        </div>
-        <div>
-            <img class="Singe3" src="Images/Singebandeau3.png" alt="Bandeau-Singe">
-            <p class="Text-Singe3">Ne cherche plus des heures la bonne info, demande à Minkey.</p>
-        </div>
-    </div>
-
-    <script>
-        // Ce script permet de faire apparaitre les singes du bandeau au scroll de la page puis de les animer en les faisant rebondir 
-        // grâce au CSS .
-
-        function isElementInViewport(el) {
-            var rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-        function animateSinges() {
-            var bandeau = document.querySelector('.Bandeau-Singe');
-            var singes = bandeau.querySelectorAll('img');
-
-            var bandeauInView = isElementInViewport(bandeau);
-
-            singes.forEach(function(singe, index) {
-                if (bandeauInView) {
-                    singe.classList.add('animate');
-                } else {
-                    singe.classList.remove('animate');
-                }
-            });
-        }
-        window.addEventListener('scroll', animateSinges);
-    </script>
-
-
-    <!-- Blocs Stats -->
-
-    <div class="Stats-Ligne1">
-        <div class="Stat1">
-            <span>43%</span>
-            <p>Des porteurs de projet abandonnent au stade de <b>l’idée d’entreprendre.</b></p>
-        </div>
-        <div class="Stat2">
-            <p>Plus de <span class="changing-color">8 millions d'entreprises</span> ont vu le jour en France entre 2012 et 2022.</p>
-        </div>
-    </div>
-    <div class="Stats-Ligne2">
-        <div class="Stat3">
-            <p>La <b>solitude</b> de <b>    l'entrepreneur</b> est la 2e raison de <b>l'abandon</b> d'un projet après le manque de financement.</p>
-        </div>
-        <div class="Stat4">
-            <span>1</span>
-            <p><b>français sur 4</b> est dans une démarche d’entreprendre.</p>
-        </div>
-        <div class="Stat5">
-            <img class="SingeStats" src="Images/Singe stats.png" alt="Image singe">
-        </div>
-    </div>
-
-
-    <!--Partie mobile-->
-    <div class="mobile">
-        <div class="Stats-Ligne1-mobile">
-            <div class="Stat1-mobile">
-                <span>43%</span>
-                <p class="text-mobile">Des porteurs de projet abandonnent au stade de <b>l’idée d’entreprendre.</b></p>
-            </div>
-        </div>
-        <div class="Stats-Ligne2-mobile">
-            <div class="Stat2-mobile">
-                <p class="text-mobile">Plus de <span class="changing-color-mobile">8 millions d'entreprises</span> ont vu le jour en France entre 2012 et 2022.</p>
-            </div>
-            <div class="Stat3-mobile">
-                <span>1</span>
-                <p class="text-mobile"><b>français sur 4</b> est dans une démarche d’entreprendre.</p>
-            </div>
-        </div>
-        <div class="Stats-Ligne3-mobile">
-            <div class="Stat4-mobile">
-                <p class="text-mobile">La <b>solitude</b> de <b>l'entrepreneur</b> est la 2e raison de <b>l'abandon</b> d'un projet après le manque de financement.</p>
-            </div>
-        </div>
-        <div class="Stats-Ligne4-mobile">
-            <div class="Stat5-mobile">
-                <img class="SingeStats-mobile" src="Images/Singe stats.png" alt="Image singe">
-            </div>
-        </div>
-    </div>
-
-    <!-- Bandeau carte offre -->
+<!-- Corps de page -->
     
+    <!-- Bloc Solution -->
 
-    <main class="Info">
-    <ul id="cards">
-        <li class="card" id="card_1">
-        <div class="card__content">
-            <div>
-                <p class="TitleCard"> C’est parti ! </p>
-                <p>Echange avec d’autres personnes (Babypreneurs, entrepreneurs, experts) en visio sur la plateforme, rejoins une communauté de plus de 500 entrepreneurs. </p>
-                <p><a href="#top" class="btn btn--accent">Read more</a></p>
+    <h1 class="Titre-Solution"> La solution pour s’en sortir dans la jungle entrepreneuriale</h1>
+
+
+    <div class="Solution">
+        <div class="ligne1-Solution">
+            <div class="colonne1">
+                <div class="testtaille">f</div>
             </div>
-            <figure>
-            <img src="Images/1.png" alt="Image description">
-            </figure>
-        </div>  
-
+            <div class="colonne2">
+                <p class="Titre-fontBulle">Minkeydvisor</p>
+                <h2 class="TitreBloc">Développe ton réseau pour ne plus te sentir</h2>
+                <p class="TexteBloc">
+                    Minkeydvisor est le premier réseau d’entraide entre entrepreneurs·es.Minkeydvisor te donne la possibilité
+                    d’échanger avec d’autres personnes qui entreprennent en visio sur la solution Minkey. 
+                </p>
+                <p class="TexteBloc">Ce système te permet de débloquer des
+                    situations & questionnements au niveau de ton projet. Il te permet d’entrer en relation avec des entrepreneurs·es aguéris·es
+                    venant des plus grands incubateurs français.</p>
+            </div>
         </div>
-        </li>
-        <li class="card" id="card_2">
-        <div class="card__content">
-            <div>
-            <p class="TitleCard">Let’ go ! </p>
-            <p>Trouve le pro qu’il te faut, établi ton brief pour recevoir ton devis en choisissant parmi une cinquantaine de prestations possibles dédiées à l’entrepreneuriat
-            </p>
-            <p><a href="#top" class="btn btn--accent">Read more</a></p>
+        <div class="ligne2-Solution">
+            <div class="colonne1">
+                <p class="Titre-fontBulle"> Minkey Team</p>
+                <h2 class="TitreBloc">Des professionnels pour entrepreneurs·esà ta disposition avec la Minkey Team.</h2>
+                <p class="TexteBloc">
+                    Réserve en quelques clics une prestation parmi plus de 60 types de missions référencées sur 6 teams d’expertise. 
+                    Pour tous tes besoins en juridique, administrative, développement web et applicatif, design ou community management. 
+                    
+                </p>
+                <p class="TexteBloc">Des prix justes, et des avantages rien que pour toi !</p>
             </div>
-            <figure>
-                <img src="Images/2.png" alt="Image description">
-            </figure>
+            <div class="colonne2">
+                <div class="testtaille">f</div>
+            </div>
         </div>
-        </li>
-        <li class="card" id="card_3">
-        <div class="card__content">
-            <div>
-            <p class="TitleCard">On a de la ressource ! 
-            </p>
-            <p>Forme-toi en ligne avec nos 8 modules de contenus et exercices, trouve aussi le coworking qu’il te faut et obtiens des tarifs avantageux chez nos partenaires. <p><a href="#top" class="btn btn--accent">Read more</a></p>
+        <div class="ligne3-Solution">
+            <div class="colonne1">
+                <div class="testtaille">f</div>
             </div>
-            <figure>
-                <img src="Images/3.png" alt="Image description">
-
-            </figure>
-        </div>
-        </li>
-    </ul>
-    </main>
-    <script>
-        // Alternative Versions:
-        // - Vanilla JS Version: https://codyhouse.co/demo-tutorials/stacking-cards/index.html
-        // - CSS @scroll-timeline: https://codepen.io/bramus/pen/PobmGme
-        // - JS ScrollTimeline Polyfill: https://codepen.io/bramus/pen/XWEeGZm
-        // - JS Motion One: https://codepen.io/bramus/pen/rNdzpZK 👈 = The version you are currently looking at
-
-        import { scroll, animate } from "https://cdn.skypack.dev/motion@10.13.1"
-
-        const $cardsWrapper = document.querySelector('#cards');
-        const $cards = document.querySelectorAll('.card');
-
-        const numCards = $cards.length;
-
-        $cards.forEach(($card, index0) => {
-        
-        const index = index0 + 1;
-        const reverseIndex = numCards - index0;
-        const reverseIndex0 = numCards - index;
-
-        // Extra padding per card, so you can see the other stacked cards underneath at the top
-        $card.style.paddingTop = `calc(${index} * var(--card-top-offset))`;
-        
-        // Scroll-Linked Animation
-        scroll(
-            animate($card, {
-            // Earlier cards shrink more than later cards
-            scale: [ 1, 1 - (0.1 * reverseIndex0)],
-            }), {
-            // Each card should only shrink when it’s at the top.
-            // We can’t use exit on the els for this (as they are sticky)
-            // but can track $cardsWrapper instead.
-            target: $cardsWrapper,
-            offset: [`${index0 / numCards * 100}%`, `${index / numCards * 100}%`],
-            }
-        );
-        });
-    </script>
-
-
-    <!-- Bandeau Recherche Pro -->
-    <div class="Bandeau-Pro">
-        <div class="CachingPro">Trouve le/la &nbsp </div>
-        <div class="changing-text"></div>
-        <h3 class="CachingProSubTitle">pour entrepreneurs rapidement et au meilleur prix.</h3>
-        
-
-        <div class="searchBar">
-            <div class="Recherche">
-                <p class="Example">SearchBar</p>
+            <div class="colonne2">
+                <p class="Titre-fontBulle">Contenus</p>
+                <h2 class="TitreBloc">Du contenus, des exercices pour te former sur les bases de l’entrepreneuriat !</h2>
+                <p class="TexteBloc">
+                    Par où commencer lorsque l’on entreprend ? 
+                    Découvre 8 modules qui te permettent d’y voir plus clair, de tester ton projet 
+                    et d’avancer dans la bonne direction.
+                </p>
             </div>
-            <a class="search-Button" href="https://my.minkey.fr/"><img src="Images/loupe.png" alt="Image loupe bouton recherche"></a>
         </div>
     </div>
-    <script>    
-        // Typewriter script for search pro section
-        const SearchAnim = document.querySelector('.Example');
-                new Typewriter(SearchAnim, {
-                    loop: true,
-                    deleteSpeed: 10
-                })
-        .changeDelay(40)
-        .typeString('Construit ton Prévisionnel Financier')
-        .pauseFor(2000)
-        .deleteChars(62) 
-        .pauseFor(5)
-        .typeString('Fais développer ton application')
-        .pauseFor(2000)
-        .deleteChars(62) 
-        .pauseFor(5)
-        .typeString('Créer les statuts de ton entreprise')
-        .pauseFor(2000)
-        .deleteChars(62) 
-        .pauseFor(5)
-        .typeString('Sois tranquille sur ta comptabilité')
-        .pauseFor(2000)
-        .start()
 
 
+    <!-- Slider Solution -->
+
+    <div class="solution">
+    <h2 class="jungle">Vous allez adorer explorer la jungle</h2>
+    <div class="jungle-text">On vous dit pourquoi</div>
+
+        <div class="slider-solution">
+            <div class="slide-track-solution">
+                <div class="slide-solution" id="slide1">
+                    <img class="img-slider-solution" src="Images/Logo-Minkey-App-Pink-RVB.png" alt="">
+                    <p class="text-slider-solution">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                </div>
+                <div class="slide-solution" id="slide2">
+                    <img class="img-slider-solution" src="Images/Logo-Minkey-App-Monochrome-Noir-RVB.png" alt="">
+                    <p class="text-slider-solution">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                </div>
+                <div class="slide-solution" id="slide3">
+                    <img class="img-slider-solution" src="Images/Logo-Minkey-App-Pink-RVB.png"" alt="">
+                    <p class="text-slider-solution">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                </div>
+                <div class="slide-solution" id="slide4">
+                    <img class="img-slider-solution" src="Images/Logo-Minkey-App-Pink-RVB.png"" alt="">
+                    <p class="text-slider-solution">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                </div>
+                <div class="slide-solution" id="slide5">
+                    <img class="img-slider-solution" src="Images/Logo-Minkey-App-Monochrome-Noir-RVB.png" alt="">
+                    <p class="text-slider-solution">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                </div>
+                <!-- Sliders solution doublé -->
+
+                <div class="slide-solution" id="slide1">
+                    <img class="img-slider-solution" src="Images/Logo-Minkey-App-Pink-RVB.png"" alt="">
+                    <p class="text-slider-solution">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                </div>
+                <div class="slide-solution" id="slide2">
+                    <img class="img-slider-solution" src="Images/Logo-Minkey-App-Monochrome-Noir-RVB.png" alt="">
+                    <p class="text-slider-solution">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                </div>
+                <div class="slide-solution" id="slide3">
+                    <img class="img-slider-solution" src="Images/Logo-Minkey-App-Pink-RVB.png" alt="">
+                    <p class="text-slider-solution">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                </div>
+                <div class="slide-solution" id="slide4">
+                    <img class="img-slider-solution" src="Images/Logo-Minkey-App-Pink-RVB.png"" alt="">
+                    <p class="text-slider-solution">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                </div>
+                <div class="slide-solution" id="slide5">
+                    <img class="img-slider-solution" src="Images/Logo-Minkey-App-Monochrome-Noir-RVB.png" alt="">
+                    <p class="text-slider-solution">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <!-- Bloc CTA -->
 
-
-
-
-        // Function to randomly select a word from the list
-        const getRandomWord = () => {
-        const words = ['Graphiste', 'Avocate','Developpeur·se', 'Commercial·e','Community Manager·se'];
-
-            
-            const currentIndex = parseInt(localStorage.getItem('currentIndex')) || 0;
-            const randomIndex = (currentIndex + 1) % words.length;
-            localStorage.setItem('currentIndex', randomIndex.toString());
-            return words[randomIndex];
-    };
-
-    
-        // Function to change the text content
-        const changeWord = () => {
-            const changingText = document.querySelector('.changing-text');
-            changingText.textContent = getRandomWord();
-    };
-    
-        // Function to apply fade animation
-        const fadeAnimation = () => {
-            const changingText = document.querySelector('.changing-text');
-            changingText.classList.remove('fade');
-            void changingText.offsetWidth;
-            changingText.classList.add('fade');
-        };
-    
-        // Initially set text and start animation
-        changeWord();
-        setInterval(changeWord, 900);
-        setInterval(fadeAnimation, 900);
-    </script>
+    <div class="CTA">
+        <img src="Images/Logo-Minkey-App-Green-RVB.png" alt="#">
+        <div class="container-CTA">
+            <h2 class="Titre-CTA">Alors, ready pour propulser ton idée d’entreprise ?</h2>
+            <a href="#" class="buttonCTA">Ca m’intéresse</a>
+        </div>
+    </div>
 
     <!-- Sliders Partenaires -->
 
@@ -427,8 +256,8 @@
         </div>
     </div>
 
-    <!-- Bandeau Articles -->
-    <div class="BandeauArticle">
+     <!-- Bandeau Articles -->
+     <div class="BandeauArticle">
         <span class="minkey">Minkey</span><span class="blog">pédia</span>
     </div></div>
 
@@ -501,8 +330,10 @@
 
     </script>
 
+
+
     
-    </container>
+
 
     <!-- Footer -->
     <footer>
@@ -556,5 +387,6 @@
         </div>
         <p class="copy">&copy;2024 &#x2022; <a href="#"> &nbsp Minkey &nbsp </a> &#x2022; Tout droits réservés</p>
     </footer>
+    
 </body>
 </html>
