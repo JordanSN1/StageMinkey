@@ -1180,20 +1180,17 @@ footer{
     font-weight: 700;
 }
 
-
 .Stat4{
-    display: flex;
-    flex-direction: row;
     background: #1A3928;
     outline: none;
     color: #1A3928;
     border-radius: 34px;
-    width: 28%;
+    width: 25%;
     height: 250px;
     padding: 20px;
     padding-top: -30px;
     color: #FFF;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .Stat4 span{
@@ -1207,7 +1204,6 @@ footer{
     font-weight: 100;
     font-size: 22px;
     color: #FFF;
-    padding-top: 125px;
 }
 
 
