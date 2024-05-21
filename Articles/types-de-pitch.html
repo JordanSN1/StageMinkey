@@ -1,13 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pitcher son projet</title>
+    <link rel="icon" href="Images/Disign-Minkey.png">
+    <link rel="stylesheet" href="..\styles\styles.css">
+    <title>types de spitch</title>
 </head>
 <body>
-    <h1>Maîtriser l’art du pitch quand on entreprend : quelques exemples de pitchs pour t’aider à y voir plus clair</h1>
-    <div class="Creation"> Minkey 2024-05-13</div>
-    <img src="Images\Fond-jungle.png" alt="dfkgjdfg">
+    <!-- Loading page-->
+
+    <div id="loader">
+        <img class="loadingMinkey" src="..\Images/Logo-Minkey-pink-RVB.png" alt="logo">
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        // Afficher la page de chargement
+        document.getElementById("loader").style.display = "flex";
+    
+        // Cacher la page de chargement après 3 secondes
+        setTimeout(function() {
+            document.getElementById("loader").style.display = "none";
+        }, 6000);
+        });
+    
+            
+    </script>
+    
+    
+    <!-- Navbar -->
+    <nav class = 'Navbar'>
+        <ul class="Sidebar">
+            <li class="HideSidebar" onclick="HideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> <br> <br>
+            <li class="Nav-List1"><a class="links" href="..\Pages\solution.html">Solution</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="..\Pages\Minkey.html">Minkey</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="..\Pages\blog.html">Le blog</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="..\Pages\Partenaire.html">Partenaires</a></li> <br>
+        </ul>
+        <ul class="Nav-container">
+            <li class="list-image"><a href="..\index.html"><img class="HomeImage" src="..\Images\Logo-Minkey-Green-RVB.png" alt="HomeImage"></a></li>
+            <li class="Nav-List"><a class="links" href="..\Pages\solution.html">Solution</a></li>
+            <li class="Nav-List"><a class="links" href="..\Pages\Minkey.html">Minkey</a></li>
+            <li class="Nav-List"><a class="links" href="..\Pages\blog.html">Le blog</a></li>
+            <li class="Nav-List"><a class="links" href="..\Pages\Partenaire.html">Partenaires</a></li>
+            <li class="icon" onclick="ShowSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <a class="buttonProfile" href="https://my.minkey.fr"><img class="profile" src="..\Images\Profile.png" alt="profile"></a>
+            
+        <a class="ButtonContact" href="contact.html">Contact</a>
+    </nav>
+    
+    <script>
+        function ShowSidebar() {
+            const Sidebar = document.querySelector('.Sidebar')
+            Sidebar.style.display = 'flex'
+        }
+        function HideSidebar() {
+            const Sidebar = document.querySelector('.Sidebar')
+            Sidebar.style.display = 'none'
+        }
+    </script>
+
+    <div class="FirstVisual">
+        <img class="Visuel-Article" src="..\Images\Fond-jungle.png" alt="Visuel-Article">
+        <div class="Visual-title">Business Plan toute les infos clés</div>
+    </div>
+    <div class="all-content">
+        <div class="Main-content">
+            <h1 class="Article-title">Business plan : que doit-il impérativement contenir et comment le réussir ?</h1>
+            <div class="details"></div>
+                <span class="Etiquette">Business</span>
+                <span class="Creation"> Minkey 13-05-2024</span>
+                <div class="corps-texte">
+                    <article>
+                        <p>
+                            La randonnée en montagne est une activité de plein air qui offre de nombreux bienfaits pour la santé physique et mentale. En plus d'être une excellente forme d'exercice, elle permet de se reconnecter avec la nature et de profiter de paysages à couper le souffle.
+                        </p>
+                        <p>
+                            L'un des principaux avantages de la randonnée est qu'elle améliore la condition physique. Marcher sur des terrains variés et souvent escarpés sollicite différents groupes musculaires et renforce l'endurance cardiovasculaire. De plus, l'altitude peut également aider à améliorer la capacité respiratoire.
+                        </p>
+                        <h2>
+                            Bienfaits pour la santé mentale
+                        </h2>
+                        <p>
+                            Outre les bienfaits physiques, la randonnée en montagne a des effets positifs sur la santé mentale. Elle permet de réduire le stress, de lutter contre l'anxiété et d'améliorer l'humeur. Passer du temps en nature a été prouvé pour diminuer les niveaux de cortisol, l'hormone du stress.
+                        </p>
+                        <p>
+                            En plus de ses effets sur la santé, la randonnée en montagne offre une opportunité unique de découvrir la biodiversité locale. Les montagnes abritent une faune et une flore spécifiques, souvent endémiques à ces régions. Observer des espèces rares et profiter de la beauté naturelle est une expérience enrichissante.
+                        </p>
+                        <p>
+                            Enfin, la randonnée en montagne favorise le développement de compétences pratiques telles que l'orientation, la gestion du temps et la préparation physique. Elle encourage également un mode de vie actif et conscient, essentiel pour le bien-être général.
+                        </p>
+                    </article>
+                </div>
+                
+
+            <div class="Article-description">
+                <div class="Redactedby">
+                    <p class="redact-text">Rediger Par</p>
+                    <div class="content-redact">
+                        <img class="Redactedby-image" src="..\Images\Magali.png" alt="Redactedby-image">
+                        <span class="Redactedby-name">Magali Contarini</span>
+                    </div>
+
+                </div>
+
+                <div class="Share">
+                    <p class="Share-text">Partager</p>
+                    <div class="content-share">
+                        <a href="https://instagram.com"target="_blank"><img class="Share-image Inst-IMG" src="..\Images\icons\instagram.svg" alt="instagram"></a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://minkey.fr/&title=Minkey" target="_blank"><img class="Share-image Linkedin-IMG" src="..\Images\icons\linkedin.svg" alt="linkedin"></a>
+                    </div>  
+            </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="CatchTextFooter">
+            <h2>Minkey est soutenu par </h2>
+        </div>
+        <div class="logo-incub">
+            <a href="https://diversidays.com/" target="_blank"><img src="..\Images/Diversidays.png" alt="Images Incubateurs"></a>
+            <a href="https://empow-her.com/" target="_blank"><img src="..\Images/Empowher.png" alt="Images Incubateurs"></a>
+            <a href="https://stationf.co/" target="_blank"><img src="..\Images/StationF.png" alt="Images Incubateurs"></a>
+            <a href="https://hellowilla.co/" target="_blank"><img src="..\Images/willa.png" alt="Images Incubateurs"></a>
+        </div>
+
+        <div class="content-footer">
+            <div class="brand">
+                <a href="index.html"><img class="brand-logo" src="..\Images\Logo-Minkey-Green-RVB.png" alt="Logo Minkey"></a>
+                <p class="brand-text">Minkey, c’est le petit singe malin qui t’aide à t’en sortir dans la jungle entrepreneuriale.</p>
+    
+            </div>
+            <div class="bloc footer-produits">
+                <h3 class="title">produits</p>
+                <ul class="list-produits">
+                    <li><a href="#">Minkey</a></li>
+                    <li><a href="#">La solution</a></li> 
+                </ul>
+            </div>
+            <div class="bloc footer-aide">
+                <h3 class="title">aide</p>
+                <ul class="list-aide">
+                    <li><a href="#">Qui est minkey ?</a></li>
+                    <li><a href="#">Minkeypédia</a></li>
+                </ul>
+            </div>
+            <div class="bloc footer-minkey">
+                <h3 class="title">Minkey</p>
+                <ul class="list-minkey">
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Protection des données</a></li>
+                    <li><a href="#">CVG & CGU</a></li>
+                    <li><a href="#">Politiques de cookies</a></li>
+                </ul>
+            </div>
+            <div class="bloc footer-reseaux">
+                <h3 class="title">Nos reseaux</p>
+                <ul class="list-reseaux">
+                    <li><a id="InstagramText" class="Instagram" href="https://www.instagram.com/minkey.fr/" target="_blank"><img class="Reseaux" id="InstagramIMG" src="..\Images\icons\instagram.svg" alt="Icones reseaux sociaux">@minkey</a></li>
+                    <li><a id="LinkedinText"  class="linkedin" href="https://www.linkedin.com/company/minkey-fr/" target="_blank"><img class="Reseaux" id="LinkedinIMG" src="..\Images\icons\linkedin.svg" alt="Icones reseaux sociaux">Minkey</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <p class="copy">&copy;2024 &#x2022; <a href="#"> &nbsp Minkey &nbsp </a> &#x2022; Tout droits réservés</p>
+    </footer>
 </body>
+
 </html>
