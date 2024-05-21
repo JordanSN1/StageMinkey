@@ -1130,11 +1130,12 @@ footer{
     width: 60%;
     height: 250px;
     margin-right: 20px;
+    padding-top: 3vh;
 }
 
 .Stat1 span{
     margin-left: 20px;
-    margin-top: 20px;
+    padding-top: 2vh;
     font-weight: 700;
     font-size: 99px;    
     color: #fff;
@@ -1144,7 +1145,7 @@ footer{
     font-weight: 100;
     font-size: 22px;
     padding-right: 20px;
-    margin-top: 5px;
+    margin-top: 5vh;
     padding-left: 20px;
     margin-bottom: 24px;
     color: #FFF;
@@ -1180,22 +1181,26 @@ footer{
     font-weight: 700;
 }
 
+
 .Stat4{
+    display: flex;
+    flex-direction: column;
     background: #1A3928;
     outline: none;
     color: #1A3928;
     border-radius: 34px;
-    width: 25%;
+    width: 28%;
     height: 250px;
     padding: 20px;
     padding-top: -30px;
     color: #FFF;
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
 .Stat4 span{
     font-weight: 700;
     color: #FFF;
+    display: flex;
     font-size: 99px;
     padding-bottom: 15px;
 }
@@ -1221,6 +1226,7 @@ footer{
 
 .Stat3 p{
     font-size: 30px;
+    margin-top: 2vh;
 }
 
 .Stat5 {
