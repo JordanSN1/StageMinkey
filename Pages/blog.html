@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le blog</title>
+    <link rel="stylesheet" href="..\styles\styles.css">
+    <link rel="icon" href="Images/Disign-Minkey.png">
+
+
+</head>
+<body class="blog_body">
+     <!-- Loading page-->
+
+
+
+
+    <!-- Navbar -->
+    <nav class = 'Navbar'>
+        <ul class="Sidebar">
+            <li class="HideSidebar" onclick="HideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> <br> <br>
+            <li class="Nav-List1"><a class="links" href="..\Pages\solution.html">Solution</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="..\Pages\Minkey.html">Minkey</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="..\Pages\blog.html">Le blog</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="..\Pages\Partenaire.html">Partenaires</a></li> <br>
+        </ul>
+        <ul class="Nav-container">
+            <li class="list-image"><a href="..\index.html"><img class="HomeImage" src="..\Images\Logo-Minkey-Green-RVB.png" alt="HomeImage"></a></li>
+            <li class="Nav-List"><a class="links" href="..\Pages\solution.html">Solution</a></li>
+            <li class="Nav-List"><a class="links" href="..\Pages\Minkey.html">Minkey</a></li>
+            <li class="Nav-List"><a class="links" href="..\Pages\blog.html">Le blog</a></li>
+            <li class="Nav-List"><a class="links" href="..\Pages\Partenaire.html">Partenaires</a></li>
+            <li class="icon" onclick="ShowSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <a class="buttonProfile" href="https://my.minkey.fr"><img class="profile" src="..\Images\Profile.png" alt="profile"></a>
+            
+        <a class="ButtonContact" href="contact.html">Contact</a>
+    </nav>
+
+    <script>
+        function ShowSidebar() {
+            const Sidebar = document.querySelector('.Sidebar')
+            Sidebar.style.display = 'flex'
+        }
+        function HideSidebar() {
+            const Sidebar = document.querySelector('.Sidebar')
+            Sidebar.style.display = 'none'
+        }
+    </script>
+
+
+    <!--Page principale blog-->
+
+    <div class="Container-blog">
+        <div class="blog-ligne1">
+            <div class="blog-colonne1">
+                <div class="blog">
+                    <span class="ressources">
+                    <p>NOS RESSOURCES</p>
+                    </span> <br>
+                    <h1 class="blog-title">Le Blog</h1>
+                    <h1 class="blog-title2">DES ENTREPRENEURS</h1>
+                </div>
+            </div>
+            <div class="blog-colonne2">
+                <div class="blog-img1">
+                    <img class="blog-img" src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="blog-ligne2">
+            <ul class="liste-etiquettes">
+                <a class="link1" href="#"><li>Pitch</li></a>
+                <a href="#"><li>Stratégie</li></a>
+                <a href="#"><li>Création d'entreprise</li></a>
+                <a href="#"><li>Finances</li></a>
+                <a href="#"><li>Communication</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <!--Les articles-->
+
+    <div class="Article_ligne1">
+        <div class="Article_principal">
+            <h2 class="Article_title">Le Blog</h2>
+            <p class="resume_article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe at aperiam quos in quaerat consequatur provident accusantium magnam! Maxime optio eligendi minus vel iste ullam reiciendis animi? Sint, odit qui!</p>
+            <div class="button_type"></div>
+        </div>
+        <div class="Img_Article_principal"></div>
+    </div>    
+
+   <div class="Article_ligne2">
+    <div class="blog_box_container">
+        <div class="blog_box">
+            <div class="blog_box_img"></div>
+            <div class="blog_box_text">
+                <strong>Lorem ipsum dolor sit</strong>
+                <p class="text_resume">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium deleniti beatae ex officiis maxime similique sunt quidem id in aut eligendi repudiandae amet vitae, nostrum cum perferendis unde iure. Quibusdam!</p>
+            <div class="button_type_blog"></div>
+            </div>
+        </div>
+    </div>
+    <div class="blog_box_container">
+        <div class="blog_box">
+            <div class="blog_box_img">
+                <img src="" alt="">
+            </div>
+            <div class="blog_box_text">
+                <strong>Lorem ipsum dolor sit</strong>
+                <p class="text_resume">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium deleniti beatae ex officiis maxime similique sunt quidem id in aut eligendi repudiandae amet vitae, nostrum cum perferendis unde iure. Quibusdam!</p>
+            <div class="button_type_blog"></div>
+            </div>
+        </div>
+    </div>
+    <div class="blog_box_container">
+        <div class="blog_box">
+            <div class="blog_box_img"></div>
+            <div class="blog_box_text">
+                <strong>Lorem ipsum dolor sit</strong>
+                <p class="text_resume">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium deleniti beatae ex officiis maxime similique sunt quidem id in aut eligendi repudiandae amet vitae, nostrum cum perferendis unde iure. Quibusdam!</p>
+            <div class="button_type_blog"></div>
+            </div>
+        </div>
+    </div>
+    <div class="blog_box_container">
+        <div class="blog_box">
+            <div class="blog_box_img"></div>
+            <div class="blog_box_text">
+                <strong>Lorem ipsum dolor sit</strong>
+                <p class="text_resume">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium deleniti beatae ex officiis maxime similique sunt quidem id in aut eligendi repudiandae amet vitae, nostrum cum perferendis unde iure. Quibusdam!</p>
+            <div class="button_type_blog"></div>
+            </div>
+        </div>
+    </div>
+    <div class="blog_box_container">
+        <div class="blog_box">
+            <div class="blog_box_img"></div>
+            <div class="blog_box_text">
+                <strong>Lorem ipsum dolor sit</strong>
+                <p class="text_resume">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium deleniti beatae ex officiis maxime similique sunt quidem id in aut eligendi repudiandae amet vitae, nostrum cum perferendis unde iure. Quibusdam!</p>
+            <div class="button_type_blog"></div>
+            </div>
+        </div>
+    </div>
+    <div class="blog_box_container">
+        <div class="blog_box">
+            <div class="blog_box_img"></div>
+            <div class="blog_box_text">
+                <strong>Lorem ipsum dolor sit</strong>
+                <p class="text_resume">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium deleniti beatae ex officiis maxime similique sunt quidem id in aut eligendi repudiandae amet vitae, nostrum cum perferendis unde iure. Quibusdam!</p>
+            <div class="button_type_blog"></div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+    <!-- Bloc CTA -->
+
+    <div class="CTA">
+        <img src="..\Images/Logo-Minkey-App-Green-RVB.png" alt="#">
+        <div class="container-CTA">
+            <h2 class="Titre-CTA">Alors, ready pour propulser ton idée d’entreprise ?</h2>
+            <a href="#" class="buttonCTA">Ca m’intéresse</a>
+        </div>
+    </div>
+
+    <!-- Sliders Partenaires -->
+
+    <h2 class="Header-title">Nos Partenaires</h2>
+    <p class="Header-text">Ils nous font confiance</p>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img class="img-slider" src="..\Images/artenaires/1200px-Logo_SINGA.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/4fd86707-393f-44f0-9589-9a11f9fef10e.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/logo-les-tricolores.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/Logo-principal-Bleu-foncé-2-2.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/Logo_onoff_light.svg" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/Look.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/pousses.fr-logo.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/tiime_image_a_la_une_2_Plan_de_travail_11.png" alt="">
+            </div>
+
+            <!-- Sliders Partenaires doublé -->
+
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/1200px-Logo_SINGA.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/4fd86707-393f-44f0-9589-9a11f9fef10e.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/logo-les-tricolores.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/Logo-principal-Bleu-foncé-2-2.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/Logo_onoff_light.svg" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/Look.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/pousses.fr-logo.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="img-slider" src="..\Images/Partenaires/tiime_image_a_la_une_2_Plan_de_travail_11.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="CatchTextFooter">
+            <h2>Minkey est soutenu par </h2>
+        </div>
+        <div class="logo-incub">
+            <a href="https://diversidays.com/" target="_blank"><img src="..\Images/Diversidays.png" alt="Images Incubateurs"></a>
+            <a href="https://empow-her.com/" target="_blank"><img src="..\Images/Empowher.png" alt="Images Incubateurs"></a>
+            <a href="https://stationf.co/" target="_blank"><img src="..\Images/StationF.png" alt="Images Incubateurs"></a>
+            <a href="https://hellowilla.co/" target="_blank"><img src="..\Images/willa.png" alt="Images Incubateurs"></a>
+        </div>
+
+        <div class="content-footer">
+            <div class="brand">
+                <a href="..\index.html"><img class="brand-logo" src="..\Images\Logo-Minkey-Green-RVB.png" alt="Logo Minkey"></a>
+                <p class="brand-text">Minkey, c’est le petit singe malin qui t’aide à t’en sortir dans la jungle entrepreneuriale.</p>
+    
+            </div>
+            <div class="bloc footer-produits">
+                <h3 class="title">produits</p>
+                <ul class="list-produits">
+                    <li><a href="#">Minkey</a></li>
+                    <li><a href="#">La solution</a></li> 
+                </ul>
+            </div>
+            <div class="bloc footer-aide">
+                <h3 class="title">aide</p>
+                <ul class="list-aide">
+                    <li><a href="#">Qui est minkey ?</a></li>
+                    <li><a href="#">Minkeypédia</a></li>
+                </ul>
+            </div>
+            <div class="bloc footer-minkey">
+                <h3 class="title">Minkey</p>
+                <ul class="list-minkey">
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Protection des données</a></li>
+                    <li><a href="#">CVG & CGU</a></li>
+                    <li><a href="#">Politiques de cookies</a></li>
+                </ul>
+            </div>
+            <div class="bloc footer-reseaux">
+                <h3 class="title">Nos reseaux</p>
+                <ul class="list-reseaux">
+                    <li><a id="InstagramText" class="Instagram" href="https://www.instagram.com/minkey.fr/" target="_blank"><img class="Reseaux" id="InstagramIMG" src="..\Images\icons\instagram.svg" alt="Icones reseaux sociaux">@minkey</a></li>
+                    <li><a id="LinkedinText"  class="linkedin" href="https://www.linkedin.com/company/minkey-fr/" target="_blank"><img class="Reseaux" id="LinkedinIMG" src="..\Images\icons\linkedin.svg" alt="Icones reseaux sociaux">Minkey</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <p class="copy">&copy;2024 &#x2022; <a href="#"> &nbsp Minkey &nbsp </a> &#x2022; Tout droits réservés</p>
+    </footer>
+    
+</body>
+</html>
